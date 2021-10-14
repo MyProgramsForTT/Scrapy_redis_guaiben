@@ -24,7 +24,7 @@ class MysqlPipeline1(object):
 
     def __init__(self):
         self.conn = pymysql.connect(
-            host='47.113.205.237', port=3306, user='root', password='820197450zhao', db='xiaoshuo', charset='utf8')
+            host='127.0.0.1', port=3306, user='root', password='820197450zhao', db='xiaoshuo', charset='utf8')
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
@@ -48,7 +48,7 @@ class MysqlPipeline2(object):
 
     def __init__(self):
         self.conn = pymysql.connect(
-            host='47.113.205.237', port=3306, user='root', password='820197450zhao', db='xiaoshuo', charset='utf8')
+            host='127.0.0.1', port=3306, user='root', password='820197450zhao', db='xiaoshuo', charset='utf8')
         self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
@@ -73,7 +73,7 @@ class MysqlPipeline3(object):
     def __init__(self):
         # 建立连接
         self.conn = pymysql.connect(
-            host='47.113.205.237', port=3306, user='root', password='820197450zhao', db='xiaoshuo', charset='utf8')
+            host='127.0.0.1', port=3306, user='root', password='password', db='xiaoshuo', charset='utf8')
         # 创建游标
         self.cursor = self.conn.cursor()
 
